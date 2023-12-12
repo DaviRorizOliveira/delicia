@@ -7,8 +7,8 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.top}>
         <div><h1>DELLÍCIA</h1></div>
-        <div>
-          <a href="#" className={styles.userIcon}>
+        <div className={styles.userIcon}>
+          <a href="#">
             <span className={styles.userIcon}><FaUserAlt /></span>
           </a>
         </div>
@@ -25,8 +25,8 @@ export default function Home() {
               <h2> <FaCoffee /> </h2>
             </div>
 
-            <div>
-              <h2 className={styles.horario}>7:00 ATÉ 9:00</h2>
+            <div className={styles.horario}>
+              <h2>7:00 ATÉ 9:00</h2>
             </div>
 
             <div className={styles.parteDeBaixo}>
@@ -54,8 +54,8 @@ export default function Home() {
               <h2> <BiSolidDish /> </h2>
             </div>
 
-            <div>
-              <h2 className={styles.horario}>11:00 ATÉ 14:00</h2>
+            <div className={styles.horario}>
+              <h2>11:00 ATÉ 14:00</h2>
             </div>
 
             <div className={styles.parteDeBaixo}>
@@ -83,8 +83,8 @@ export default function Home() {
               <h2> <FaMoon /> </h2>
             </div>
 
-            <div>
-              <h2 className={styles.horario}>17:00 ATÉ 19:00</h2>
+            <div className={styles.horario}>
+              <h2>17:00 ATÉ 19:00</h2>
             </div>
 
             <div className={styles.parteDeBaixo}>

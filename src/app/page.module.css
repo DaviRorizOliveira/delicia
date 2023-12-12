@@ -13,8 +13,8 @@
   flex-wrap: wrap;
   align-items: center; /* Posiciona tudo ao centro da tela */
   height: 10vh; /* Altura da nav bar */
-  padding-left: 200px; /* espaçamento de 5% para a esquerda */
-  padding-right: 200px; /* espaçamento de 5% para a direita */
+  padding-left: 30%; /* espaçamento de 5% para a esquerda */
+  padding-right: 30%; /* espaçamento de 5% para a direita */
 }
 
 .middle {
@@ -25,6 +25,15 @@
 
 .userIcon {
   color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Define o tamanho */
+  height: 40px; /* Define o tamanho */
+  background-color: #FFD449; /* Cor de fundo */
+  border-radius: 50%; /* Cria a circunferência */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra à borda da circunferência */
+  border: 2px solid black;
 }
 
 .box {
@@ -36,12 +45,16 @@
   margin: 20px;
   padding: 15px;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 99;
 }
 
 .parteDeBaixo {
-  flex-direction: row;
+  display: flex; /* Torna o contêiner um flex container */
+  align-items: center;
+  justify-content: space-between; /* Distribui os elementos ao longo do contêiner */
+  margin-left: 15%;
+  margin-right: 15%;  
 }
 
 .parteDeCima {
@@ -53,4 +66,13 @@
 
 .normal, .extra {
   margin-top: 20px;
+}
+
+.normal h1, .extra h1 {
+  font-size: 80px;
+}
+
+.horario {
+  padding-top: 5px;
+  font-size: 10px;
 }
