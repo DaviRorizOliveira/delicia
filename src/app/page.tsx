@@ -1,95 +1,117 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from './page.module.css';
+import { FaUserAlt, FaCoffee, FaMoon } from 'react-icons/fa';
+import { BiSolidDish } from 'react-icons/bi';
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
+      <div className={styles.top}>
+        <div><h1>DELLÍCIA</h1></div>
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+          <a href="#" className={styles.userIcon}>
+            <span className={styles.userIcon}><FaUserAlt /></span>
           </a>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.middle}>
+
+        <div className={styles.cafe}>
+
+          <div className={styles.box}>
+
+            <div className={styles.parteDeCima}>
+              <h2>FICHAS RESTANTES</h2>
+              <h2> <FaCoffee /> </h2>
+            </div>
+
+            <div>
+              <h2 className={styles.horario}>7:00 ATÉ 9:00</h2>
+            </div>
+
+            <div className={styles.parteDeBaixo}>
+              <div className={styles.normal}>
+                <h2>NORMAL</h2>
+                <h1>09</h1>
+              </div>
+
+              <div className={styles.extra}>
+                <h2>EXTRA</h2>
+                <h1>150</h1>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div className={styles.almoco}>
+
+          <div className={styles.box}>
+
+            <div className={styles.parteDeCima}>
+              <h2>FICHAS RESTANTES</h2>
+              <h2> <BiSolidDish /> </h2>
+            </div>
+
+            <div>
+              <h2 className={styles.horario}>11:00 ATÉ 14:00</h2>
+            </div>
+
+            <div className={styles.parteDeBaixo}>
+              <div className={styles.normal}>
+                <h2>NORMAL</h2>
+                <h1>900</h1>
+              </div>
+
+              <div className={styles.extra}>
+                <h2>EXTRA</h2>
+                <h1>300</h1>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div className={styles.jantar}>
+
+          <div className={styles.box}>
+
+            <div className={styles.parteDeCima}>
+              <h2>FICHAS RESTANTES</h2>
+              <h2> <FaMoon /> </h2>
+            </div>
+
+            <div>
+              <h2 className={styles.horario}>17:00 ATÉ 19:00</h2>
+            </div>
+
+            <div className={styles.parteDeBaixo}>
+              <div className={styles.normal}>
+                <h2>NORMAL</h2>
+                <h1>300</h1>
+              </div>
+
+              <div className={styles.extra}>
+                <h2>EXTRA</h2>
+                <h1>150</h1>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div className={styles.fila}>
+          <div className={styles.box}>
+            <h2>TAMANHO DA FILA</h2>
+            <h1>64</h1>
+            <p>*estimativa</p>
+          </div>  
+        </div>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <div className={styles.down}></div>
     </main>
   )
 }
