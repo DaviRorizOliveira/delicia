@@ -20,6 +20,24 @@
   background-image: url(../../public/images/background.png);
 }
 
+.sideIcon{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-size: 40px;
+  margin: 0 0 4px 60px;
+}
+
+.sideIcon2{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: white;
+  font-size: 35px;
+  margin: 0 60px 5px 0;
+}
+
 .middle {
   display: flex; /* Centraliza horizontalmente */
   flex-direction: column; /* Centraliza horizontalmente */
@@ -117,6 +135,6 @@
 }
 
 .plateIcon {
-  font-size: 50px;
+  font-size: 30px;
   color: #8D5906; /* Cor do ícone */
 }
