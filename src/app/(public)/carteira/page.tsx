@@ -1,4 +1,4 @@
-import styles from './page.module.css';
+import styles from '@/app/page.module.css';
 import { FaUserAlt, FaCoffee, FaMoon, FaWallet } from 'react-icons/fa';
 import { BiSolidDish } from 'react-icons/bi';
 import { MdOutlineRestaurantMenu } from "react-icons/md";

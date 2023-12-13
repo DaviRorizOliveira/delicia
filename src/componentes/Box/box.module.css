@@ -3,7 +3,7 @@
   display: flex; /* Centraliza horizontalmente */
   flex-direction: column; /* Centraliza horizontalmente */
 
-  background-image: url(../../public/images/background.png);
+  background-image: url('/public/images/background.png');
 }
 
 .top {
@@ -17,14 +17,14 @@
   padding: 20px 0;
   top: 0;
   background-color: var(--background-color);
-  background-image: url(../../public/images/background.png);
+  background-image: url('/public/images/background.png');
 }
 
 .sideIcon{
   position: fixed;
   bottom: 0;
   left: 0;
-  color: #68450D;
+  color: white;
   font-size: 40px;
   margin: 0 0 4px 60px;
 }
@@ -33,7 +33,7 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  color: #68450D;
+  color: white;
   font-size: 35px;
   margin: 0 60px 5px 0;
 }
@@ -68,7 +68,12 @@
   padding: 15px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 99;
+}
+
+.box2{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px
 }
 
 .parteDeBaixo {

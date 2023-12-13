@@ -4,6 +4,7 @@ import { FaUserAlt, FaCoffee, FaMoon, FaWallet } from 'react-icons/fa';
 import { BiSolidDish } from 'react-icons/bi';
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { TbMessageExclamation } from 'react-icons/tb';
+import Box from '@/componentes/Box';
 
 export default function Home() {
   return (
@@ -21,91 +22,9 @@ export default function Home() {
 
       <div className={styles.middle}>
 
-        <div className={styles.cafe}>
-
-          <div className={styles.box}>
-
-            <div className={styles.parteDeCima}>
-              <h2>FICHAS RESTANTES</h2>
-              <FaCoffee className={styles.icones} />
-            </div>
-
-            <div className={styles.horario}>
-              <h2>7:00 ATÉ 9:00</h2>
-            </div>
-
-            <div className={styles.parteDeBaixo}>
-              <div className={styles.normal}>
-                <h2>NORMAL</h2>
-                <p>09</p>
-              </div>
-
-              <div className={styles.extra}>
-                <h2>EXTRA</h2>
-                <p>150</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div className={styles.almoco}>
-
-          <div className={styles.box}>
-
-            <div className={styles.parteDeCima}>
-              <h2>FICHAS RESTANTES</h2>
-              <BiSolidDish className={styles.icones}  />
-            </div>
-
-            <div className={styles.horario}>
-              <h2>11:00 ATÉ 14:00</h2>
-            </div>
-
-            <div className={styles.parteDeBaixo}>
-              <div className={styles.normal}>
-                <h2>NORMAL</h2>
-                <p>900</p>
-              </div>
-
-              <div className={styles.extra}>
-                <h2>EXTRA</h2>
-                <p>300</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div className={styles.jantar}>
-
-          <div className={styles.box}>
-
-            <div className={styles.parteDeCima}>
-              <h2>FICHAS RESTANTES</h2>
-              <h2> <FaMoon className={styles.icones}  /> </h2>
-            </div>
-
-            <div className={styles.horario}>
-              <h2>17:00 ATÉ 19:00</h2>
-            </div>
-
-            <div className={styles.parteDeBaixo}>
-              <div className={styles.normal}>
-                <h2>NORMAL</h2>
-                <p>300</p>
-              </div>
-
-              <div className={styles.extra}>
-                <h2>EXTRA</h2>
-                <p>150</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
+        <Box qtdNormal={9} qtdExtra={150} horario='7:00 ATÉ 9:00' icone={FaCoffee}/>
+        <Box qtdNormal={900} qtdExtra={300} horario='11:00 ATÉ 14:00' icone={BiSolidDish} isClose/>
+        <Box qtdNormal={300} qtdExtra={150} horario='17:00 ATÉ 19:00' icone={FaMoon} isClose/>
 
         <div className={styles.fila}>
           <div className={styles.box}>
