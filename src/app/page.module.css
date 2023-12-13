@@ -12,14 +12,19 @@
   flex-wrap: wrap;
   align-items: center; /* Posiciona tudo ao centro da tela */
   height: 10vh; /* Altura da nav bar */
-  padding-left: 30%; /* espaçamento de 5% para a esquerda */
-  padding-right: 30%; /* espaçamento de 5% para a direita */
+  min-width: 370px;
+  position: fixed;
+  padding: 20px 0;
+  top: 0;
+  background-color: var(--background-color);
+  background-image: url(../../public/images/background.png);
 }
 
 .middle {
   display: flex; /* Centraliza horizontalmente */
   flex-direction: column; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza horizontalmente */
+  margin: 10vh 0;
 }
 
 .userIcon {
@@ -36,7 +41,7 @@
 }
 
 .box {
-  width: 40em;
+  width: 300px;
   background-color: #D08C1D;
   color: white;
   align-items: center;
@@ -52,8 +57,17 @@
   display: flex; /* Torna o contêiner um flex container */
   align-items: center;
   justify-content: space-between; /* Distribui os elementos ao longo do contêiner */
-  margin-left: 15%;
-  margin-right: 15%;  
+  margin-left: 10%;
+  margin-right: 10%;  
+}
+
+.icones{
+  font-size: 25px;
+}
+
+.extra>p, .normal>p {
+  font-size: 1.8em;
+  font-weight: bolder;
 }
 
 .parteDeCima {
@@ -73,31 +87,36 @@
 
 .horario {
   padding-top: 5px;
-  font-size: 10px;
+  font-size: 0.9em;
 }
 
 .footer {
-  margin-top: 2%;
+  width: 100%;
   background-color: #F9A620;
-  padding: 20px;
+  height: 50px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0
 }
 
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background-color: #FFD449; /* Azul */
   border-radius: 50%; /* Torna a div circular */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto; /* Centraliza a div no footer */
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 15px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
-  margin-top: -4%;
 }
 
 .plateIcon {
-  margin-top: 10%;
-  font-size: 60px;
+  font-size: 50px;
   color: #8D5906; /* Cor do ícone */
 }

@@ -1,3 +1,4 @@
+'use client'
 import styles from './page.module.css';
 import { FaUserAlt, FaCoffee, FaMoon } from 'react-icons/fa';
 import { BiSolidDish } from 'react-icons/bi';
@@ -6,12 +7,14 @@ import { MdOutlineRestaurantMenu } from "react-icons/md";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.top}>
-        <div><h1>DELLÍCIA</h1></div>
-        <div className={styles.userIcon}>
-          <a href="/aluno">
-            <span className={styles.userIcon}> <FaUserAlt /> </span>
-          </a>
+      <div style={{display: 'flex', justifyContent: "center"}}>
+        <div className={styles.top}>
+          <h1>DELLÍCIA</h1>
+          <div className={styles.userIcon}>
+            <a href="/aluno">
+              <span className={styles.userIcon}> <FaUserAlt /> </span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -23,7 +26,7 @@ export default function Home() {
 
             <div className={styles.parteDeCima}>
               <h2>FICHAS RESTANTES</h2>
-              <h2> <FaCoffee /> </h2>
+              <FaCoffee className={styles.icones} />
             </div>
 
             <div className={styles.horario}>
@@ -33,12 +36,12 @@ export default function Home() {
             <div className={styles.parteDeBaixo}>
               <div className={styles.normal}>
                 <h2>NORMAL</h2>
-                <h1>09</h1>
+                <p>09</p>
               </div>
 
               <div className={styles.extra}>
                 <h2>EXTRA</h2>
-                <h1>150</h1>
+                <p>150</p>
               </div>
             </div>
 
@@ -52,7 +55,7 @@ export default function Home() {
 
             <div className={styles.parteDeCima}>
               <h2>FICHAS RESTANTES</h2>
-              <h2> <BiSolidDish /> </h2>
+              <BiSolidDish className={styles.icones}  />
             </div>
 
             <div className={styles.horario}>
@@ -62,12 +65,12 @@ export default function Home() {
             <div className={styles.parteDeBaixo}>
               <div className={styles.normal}>
                 <h2>NORMAL</h2>
-                <h1>900</h1>
+                <p>900</p>
               </div>
 
               <div className={styles.extra}>
                 <h2>EXTRA</h2>
-                <h1>300</h1>
+                <p>300</p>
               </div>
             </div>
 
@@ -81,7 +84,7 @@ export default function Home() {
 
             <div className={styles.parteDeCima}>
               <h2>FICHAS RESTANTES</h2>
-              <h2> <FaMoon /> </h2>
+              <h2> <FaMoon className={styles.icones}  /> </h2>
             </div>
 
             <div className={styles.horario}>
@@ -91,12 +94,12 @@ export default function Home() {
             <div className={styles.parteDeBaixo}>
               <div className={styles.normal}>
                 <h2>NORMAL</h2>
-                <h1>300</h1>
+                <p>300</p>
               </div>
 
               <div className={styles.extra}>
                 <h2>EXTRA</h2>
-                <h1>150</h1>
+                <p>150</p>
               </div>
             </div>
 
@@ -115,9 +118,9 @@ export default function Home() {
       <div className={styles.down}>
         <div className={styles.footer}>
           <div className={styles.circle}>
-            <a href="#">
-              <span className={styles.plateIcon}> <MdOutlineRestaurantMenu /> </span>
-            </a>
+            <MdOutlineRestaurantMenu className={styles.plateIcon} onClick={()=>{
+              window.location.href='/cardarpio'
+            }} />
           </div>
         </div>
       </div>
