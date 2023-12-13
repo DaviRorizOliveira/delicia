@@ -1,0 +1,104 @@
+.main {
+    justify-content: center; /* Centraliza verticalmente */
+    display: flex; /* Centraliza horizontalmente */
+    flex-direction: column; /* Centraliza horizontalmente */
+  
+    background-image: url(../../../../public/images/background.png);
+  }
+  
+  .top {
+    display: flex; /* Mantém  a tag em uma única linha */
+    justify-content: space-between; /* Cria um espaçamento entre a logo e a nav bar */
+    flex-wrap: wrap;
+    align-items: center; /* Posiciona tudo ao centro da tela */
+    height: 10vh; /* Altura da nav bar */
+    padding-left: 30%; /* espaçamento de 5% para a esquerda */
+    padding-right: 30%; /* espaçamento de 5% para a direita */
+  }
+  
+  .middle {
+    display: flex; /* Centraliza horizontalmente */
+    flex-direction: column; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza horizontalmente */
+  }
+  
+  .userIcon {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Define o tamanho */
+    height: 40px; /* Define o tamanho */
+    background-color: #FFD449; /* Cor de fundo */
+    border-radius: 50%; /* Cria a circunferência */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra à borda da circunferência */
+    border: 2px solid black;
+  }
+  
+  .box {
+    width: 40em;
+    background-color: #D08C1D;
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .darkBox {
+    width: 40em;
+    background-color: #364248;
+    color: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .footer {
+    margin-top: 180px;
+    background-color: #F9A620;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 35%;
+    padding-right: 35%;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: #FFD449; /* Azul */
+    border-radius: 50%; /* Torna a div circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Centraliza a div no footer */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-top: -10%;
+  }
+  
+  .plateIcon {
+    margin-top: 10%;
+    font-size: 50px;
+    color: #8D5906; /* Cor do ícone */
+  }
+
+  .sideIcon {
+    font-size: 40px;
+    color: #8D5906;
+  }
+
+  .element {
+    margin-top: 20px;
+  }

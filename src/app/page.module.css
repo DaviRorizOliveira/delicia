@@ -1,5 +1,4 @@
 .main {
-  padding-bottom: 40px;
   justify-content: center; /* Centraliza verticalmente */
   display: flex; /* Centraliza horizontalmente */
   flex-direction: column; /* Centraliza horizontalmente */
@@ -75,4 +74,30 @@
 .horario {
   padding-top: 5px;
   font-size: 10px;
+}
+
+.footer {
+  margin-top: 2%;
+  background-color: #F9A620;
+  padding: 20px;
+  text-align: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #FFD449; /* Azul */
+  border-radius: 50%; /* Torna a div circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Centraliza a div no footer */
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+  margin-top: -4%;
+}
+
+.plateIcon {
+  margin-top: 10%;
+  font-size: 60px;
+  color: #8D5906; /* Cor do ícone */
 }

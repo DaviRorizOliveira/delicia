@@ -1,7 +1,8 @@
 import styles from './page.module.css';
-import { FaUserAlt, FaCoffee, FaMoon } from 'react-icons/fa';
+import { FaUserAlt, FaCoffee, FaMoon, FaWallet } from 'react-icons/fa';
 import { BiSolidDish } from 'react-icons/bi';
 import { MdOutlineRestaurantMenu } from "react-icons/md";
+import { TbMessageExclamation } from "react-icons/tb";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <div className={styles.top}>
         <div><h1>DELLÍCIA</h1></div>
         <div className={styles.userIcon}>
-          <a href="/aluno">
+          <a href="#">
             <span className={styles.userIcon}> <FaUserAlt /> </span>
           </a>
         </div>
@@ -113,14 +114,31 @@ export default function Home() {
       </div>
 
       <div className={styles.down}>
+        
         <div className={styles.footer}>
-          <div className={styles.circle}>
-            <a href="#">
-              <span className={styles.plateIcon}> <MdOutlineRestaurantMenu /> </span>
+        
+          <div>
+            <a href="/cardapio">
+              <span className={styles.sideIcon}> <MdOutlineRestaurantMenu /> </span>
             </a>
           </div>
+
+          <div className={styles.circle}>
+            <a href="/carteira">
+              <span className={styles.plateIcon}> <FaWallet /> </span>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <span className={styles.sideIcon}> <TbMessageExclamation /> </span>
+            </a>
+          </div>
+
         </div>
+
       </div>
+
     </main>
   )
 }
